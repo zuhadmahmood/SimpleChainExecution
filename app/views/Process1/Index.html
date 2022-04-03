@@ -1,0 +1,24 @@
+{{template "header.html" .}}
+
+<h1>Process 1</h1>
+
+{{if .errors}}
+<div class="error">
+	<h2>Oops, please correct these errors</h2>
+	<ul>
+		{{range .errors}}
+			<li>{{.}}</li>
+		{{end}}
+	</ul>
+</div>
+{{end}}
+<button type="button" class="collapsible">Process: Chemical composition</button>
+<div class="content">
+	<ul>
+		<li>Preparation: Furnace ULP400 (Memmert)</li>
+		<li>Preparation: WS-650Hz-8NPPB (Laurell)</li>
+		<li>Preparation: HDMSHotPlate</li>
+	  </ul>
+</div>
+<a href="/Process2/Index">Process 2</a>
+{{template "footer.html" .}}

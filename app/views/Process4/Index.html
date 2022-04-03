@@ -1,0 +1,20 @@
+{{template "header.html" .}}
+{{set . "ERROR_CLASS" "has-error"}}
+
+<h1>Process 4</h1>
+
+{{if .errors}}
+<div class="error">
+	<h2>Oops, please correct these errors</h2>
+</div>
+{{end}}
+<button type="button" class="collapsible">Process: Sputter deposition</button>
+<div class="content">
+  <ul>
+    <li>Preparation: Furnace ULP400 (Memmert)</li>
+    <li>Preparation: WS-650Hz-8NPPB (Laurell)</li>
+    <li>Preparation: HDMSHotPlate</li>
+  </ul>
+</div>
+<a href="/Application/Index">End Execution</a>
+{{template "footer.html" .}}

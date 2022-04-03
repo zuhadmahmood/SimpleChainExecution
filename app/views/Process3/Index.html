@@ -1,0 +1,20 @@
+{{template "header.html" .}}
+
+<h1>Process 3</h1>
+
+{{if .errors}}
+<div class="error">
+	<h2>Oops, please correct these errors</h2>
+</div>
+{{end}}
+<button type="button" class="collapsible"> EDSexperimental</button>
+<div class="content">
+  <ul>
+    <li>Preparation: Furnace ULP400 (Memmert)</li>
+    <li>Preparation: WS-650Hz-8NPPB (Laurell)</li>
+    <li>Preparation: HDMSHotPlate</li>
+  </ul>
+</div>
+<a href="/Process4/Index">Process 4</a>
+
+{{template "footer.html" .}}
